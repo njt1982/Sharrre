@@ -167,8 +167,8 @@
                     count += parseInt(temp, 10);
                 }
                 //get the FB total count (shares, likes and more)
-                else if (json.data && json.data.length > 0 && typeof json.data[0].total_count !== "undefined") { //Facebook total count
-                    count += parseInt(json.data[0].total_count, 10);
+                else if (json.share && json.share.length > 0 && typeof json.share.share_count !== "undefined") { //Facebook total count
+                    count += parseInt(json.share.share_count, 10);
                 }
                 else if (typeof json[0] !== "undefined") {  //Delicious
                     count += parseInt(json[0].total_posts, 10);
