@@ -24,7 +24,7 @@ SharrrePlatform.register("facebook", function (options) {
     return {
         settings: defaultSettings,
         url: function (url) {
-            return "http://graph.facebook.com/?id={url}&callback=?";
+            return "https://graph.facebook.com/?id={url}&callback=?";
         },
         trackingAction: {site: 'facebook', action: 'like'},
         load: function (self) {
